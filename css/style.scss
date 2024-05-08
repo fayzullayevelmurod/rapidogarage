@@ -38,6 +38,7 @@
 }
 
 a {
+    font-family: "Lexend", sans-serif;
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -56,15 +57,17 @@ html {
 }
 
 body {
-
+    font-family: "Lexend", sans-serif;
     font-style: normal;
 }
 
 input {
+    font-family: "Lexend", sans-serif;
     outline: none;
 }
 
 button {
+    font-family: "Lexend", sans-serif;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -81,8 +84,8 @@ address {
 }
 
 .main_container {
-    max-width: 1380px;
-    padding: 0 10px;
+    max-width: 1310px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
