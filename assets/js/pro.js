@@ -1,0 +1,13 @@
+$('.hamburger').click(function(){
+    $(this).toggleClass('active');
+    $('.navbar').toggleClass('active')
+});
+$('.menu_item').hover(
+    function(){
+        $('.menu_item').parent().find('.sub_menu').removeClass('active')
+        $(this).find('.sub_menu').addClass('active')
+    },
+    function(){
+        $(this).find('.sub_menu').removeClass('active')
+    }
+)
