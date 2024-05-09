@@ -665,42 +665,47 @@ body {
     color: rgba(187, 10, 7, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .advantages_bottom {
-    padding-bottom:80px ;
+    padding-bottom: 80px;
 }
-.advantages_gallery{
+
+.advantages_gallery {
     border-top: 1px solid rgba(216, 216, 216, 1);
-    display:flex;
+    display: flex;
     padding: 67px 0;
 }
 
 /* gallery */
 
-.galler_title{
-font-size: 18px;
-font-weight: 500;
-line-height: 28px;
-color:rgba(42, 42, 42, 1);
-width: 25%;
+.galler_title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(42, 42, 42, 1);
+    width: 25%;
 }
-.galler_contents{
+
+.galler_contents {
     width: 75%;
     position: relative;
     user-select: none;
 }
-.galler_contents::after{
+
+.galler_contents::after {
     width: 200px;
     height: 70px;
-display: block;
-position: absolute;
-left: 0;
-top: 0;
-    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
     z-index: 2;
 
 }
-.galler_contents::before{
+
+.galler_contents::before {
     position: absolute;
     right: 0;
     top: 0;
@@ -708,16 +713,155 @@ top: 0;
     width: 200px;
     height: 70px;
     display: block;
-    content:'';
+    content: '';
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
 }
-.slide_img{
+
+.slide_img {
     width: 100%;
 }
-.slide_img img{
+
+.slide_img img {
     /* object-fit: contain; */
     width: 100%;
 }
+
+/* form section */
+.forms {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #E9E9E9 0%, #FFFFFF 100%);
+
+}
+
+.forms .forms_content {
+    display: flex;
+}
+
+.forms_info {
+    background: rgba(255, 255, 255, 1);
+    width: 50%;
+    padding: 50px 75px 60px;
+}
+
+.forms_component {
+    width: 50%;
+}
+
+.form_info_title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.5px;
+    color: rgba(42, 42, 42, 1);
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form_info_title::after {
+    content: '';
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: rgba(255, 0, 0, 1);
+
+}
+
+.forms_description {
+    margin-top: 39px;
+    color: rgba(87, 87, 90, 1);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.form_description_title {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.form_description_title span {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.description_text2 {
+    margin-top: 20px;
+}
+
+.forms_component {
+    background: linear-gradient(180deg, #E3E3E3 0%, #FFFFFF 100%);
+    padding: 58px 75px 68px;
+
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+}
+
+.form_inputs input,
+select {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: rgba(42, 42, 42, 1);
+
+
+    width: 100%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 1);
+    height: 50px;
+    padding: 16px 21px;
+    border: none;
+    outline: none;
+
+}
+
+.form_inputs .select {
+    position: relative;
+}
+
+.form_inputs .select img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 20px;
+}
+
+.form_inputs select {
+    position: relative;
+    -webkit-appearance: none;
+}
+
+.form_button {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    background: rgba(42, 42, 42, 1);
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 48px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+
+    margin-top: 25px;
+}
+
 /* animations */
 @keyframes animateImg {
     from {
@@ -830,7 +974,7 @@ top: 0;
         height: calc(100vh - 188px);
         overflow: auto;
         right: -200%;
-        top:79px;
+        top: 79px;
         margin-top: 0;
         transition: all .3s linear;
     }
@@ -995,65 +1139,104 @@ top: 0;
         width: 100%;
         font-size: 30px;
         line-height: 41.25px;
-        
+
     }
-    .advantages_top .button{
+
+    .advantages_top .button {
         width: 80%;
-        padding: 16px ;
+        padding: 16px;
         text-align: center;
     }
 
     .advantages_item {
         width: 100%;
     }
-    .check_advantages{
+
+    .check_advantages {
         padding: 0 40px;
     }
-    .advantages_bottom_title{
+
+    .advantages_bottom_title {
         display: none;
     }
+
     .advantages_link a {
         font-size: 12px;
     }
-    .order_target{
-        padding: 80px 0 ;
+
+    .order_target {
+        padding: 80px 0;
     }
-    .order_target .container{
-        align-items:center;
+
+    .order_target .container {
+        align-items: center;
         gap: 20px 0;
         flex-direction: column;
     }
-    
-    .order_target .order_title{
+
+    .order_target .order_title {
         text-align: center;
     }
-    .order_target .button{
+
+    .order_target .button {
         height: 55px;
         display: flex;
         justify-content: center;
         width: 80%;
         line-height: normal;
         text-align: center;
-        padding: 16px 16px ;
+        padding: 16px 16px;
     }
+
     /* advantages gallery */
 
-    .advantages_gallery{
+    .advantages_gallery {
         flex-direction: column;
-        display:flex;
+        display: flex;
         gap: 30px 0;
     }
-    .galler_title{
+
+    .galler_title {
         width: 100%;
     }
-    .galler_contents{
-        width:100%;
+
+    .galler_contents {
+        width: 100%;
     }
-    .galler_contents::before{
+
+    .galler_contents::before {
         width: 100px;
     }
-    .galler_contents::after{
+
+    .galler_contents::after {
         width: 100px;
+    }
+
+    /* forms   */
+    .forms{
+        padding-top: 0;
+        background:#ffffff;
+    }
+    .form_description_title{
+        gap: 0 4px;
+    }
+    .forms .forms_content {
+        flex-direction: column;
+    }
+
+    .forms_info {
+        padding: 35px 37px;
+        width: 100%;
+    }
+    .forms_component {
+        width: 100%;
+        padding: 35px 37px;
+    }
+    .form_info_title {
+        font-size: 30px;
+    }
+    .forms_description {
+        font-size: 12px;
     }
 
 }
