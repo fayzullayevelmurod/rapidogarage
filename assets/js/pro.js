@@ -13,8 +13,28 @@ $('.menu_item').hover(
 )
 
 let modal_btn = document.querySelectorAll('.modal_btn');
+let modal_close = document.querySelectorAll('.modal_close');
 let modal = document.querySelector('.modal');
 let modal_bg = document.querySelector('.modal_bg');
+
+modal_btn.forEach(item => {
+    item.addEventListener('click', () => {
+        modal.classList.add('active');
+        modal_bg.classList.add('active');
+    })
+})
+
+modal_bg.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modal_bg.classList.remove('active');
+})
+
+modal_close.forEach(item2 => {
+    item2.addEventListener('click', () => {
+        modal.classList.remove('active');
+        modal_bg.classList.remove('active');
+    })
+})
 
 
 // slide gallery
