@@ -42,6 +42,29 @@
 
 <body>
     <div class="wrapper">
+
+        <div class="modal">
+            <button class="modal_close">
+                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70159 9.29209L13.5624 15.1529L14.8672 13.8481L9.00637 7.98731L14.878 2.11567L13.5756 0.813217L7.70392 6.68485L1.84266 0.823598L0.537882 2.12838L6.39914 7.98963L0.527759 13.861L1.83021 15.1635L7.70159 9.29209Z" fill="#BB0A07"/>
+                </svg>
+            </button>
+            <div class="modal_in">
+                <h6>
+                    Request a call back
+                </h6>
+                <form action="#">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="tel" placeholder="Phone *">
+                    <input type="text" placeholder="Vehicle Eg: Mercedes Benz W222">
+                    <button type="submit">
+                        Get a free quote
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="modal_bg"></div>
+
         <!-- header -->
         <header class="header">
             <!-- header top -->
@@ -303,18 +326,27 @@
                                     Garage.
                                 </div>
                                 <ul class="hero_work_check">
-                                    <li><img src="./assets/images/home_check.svg" alt=""><span>Our Work is
-                                            Guaranteed</span>
+                                    <li>
+                                        <img src="./assets/images/home_check.svg" alt="">
+                                        <span>Our Work is Guaranteed</span>
                                     </li>
-                                    <li><img src="./assets/images/home_check.svg" alt=""><span>Save Time and
-                                            Money</span>
+
+                                    <li>
+                                        <img src="./assets/images/home_check.svg" alt="">
+                                        <span>Save Time and Money</span>
                                     </li>
-                                    <li class="mob_full"><a href="" class="btn_green" aria-label="Get A Free Consultation"> <img
-                                                src="./assets/images/msg.svg" alt="">
-                                            <span>Get A Free Consultation</span> </a></li>
-                                    <li class="mobile_show mob_full"><a href="" class="btn_green" aria-label="Get A Free Consultation"> <img
-                                                src="./assets/images/pho.svg" alt="">
-                                            <span>Get A Free Consultation</span> </a></li>
+                                    <li class="mob_full">
+                                        <button class="btn_green modal_btn" aria-label="Get A Free Consultation">
+                                            <img src="./assets/images/msg.svg" alt="">
+                                            <span>Get A Free Consultation</span> 
+                                        </button>
+                                    </li>
+                                    <li class="mobile_show mob_full ">
+                                        <button aria-label="Get A Free Consultation" class="btn_green modal_btn"> 
+                                            <img src="./assets/images/pho.svg" alt="">
+                                            <span>Get A Free Consultation<span>
+                                        </button>
+                                    </li>
                                 </ul>
 
                             </div>

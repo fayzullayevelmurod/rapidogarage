@@ -12,8 +12,13 @@ $('.menu_item').hover(
     }
 )
 
+let modal_btn = document.querySelectorAll('.modal_btn');
+let modal = document.querySelector('.modal');
+let modal_bg = document.querySelector('.modal_bg');
+
+
 // slide gallery
-var galleryCar = new Swiper(".galleryCar", {
+let galleryCar = new Swiper(".galleryCar", {
     slidesPerView: 5,
     centeredSlides: true,
     spaceBetween: 70,

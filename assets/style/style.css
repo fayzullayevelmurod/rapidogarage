@@ -13,6 +13,17 @@ li {
 
 a {
     text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+button {
+    font-family: "Lexend", sans-serif;
+}
+
+input,
+label,
+textarea {
+    font-family: "Lexend", sans-serif;
 }
 
 html {
@@ -62,13 +73,83 @@ body {
     overflow: hidden;
 }
 
+.modal {
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 20px 20px 20px;
+    z-index: 6;
+    background-color: #fff;
+}
+
+.modal .modal_close {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.modal h6 {
+    color: #000;
+    text-shadow: 0 0 0 rgba(2, 2, 2, .23);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.modal input:focus {
+    outline: none;
+}
+
+.modal form button {
+    margin-top: 10px;
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+}
+
+.modal_bg {
+    background: rgba(27, 27, 27, 0.9);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* header */
 .header {
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0; */
-    /* background: #F9F9F9FF; */
     z-index: 11;
 }
 
@@ -428,6 +509,8 @@ header .header_action {
 }
 
 .hero_work_check .btn_green {
+    cursor: pointer;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1758,4 +1841,10 @@ footer .footer_bottom .footer_btn_top:hover span{
         padding: 55px 0;
     }
 
+}
+
+@media (max-width: 430px) {
+    .modal {
+        width: 90%;
+    }
 }
